@@ -12,3 +12,21 @@ int main()
 
     getch();
 }
+
+or-----------------
+
+
+#include<stdio.h>
+int main()
+{
+    char str1[]="My name is ";
+    //char str2[]="Siam Tanmoy";
+
+    strcat(str1,"Siam Tanmoy");
+
+    printf("str1 is: %s\n",str1);
+    //printf("str2 is: %s",str2); 
+
+
+    getch();
+}
