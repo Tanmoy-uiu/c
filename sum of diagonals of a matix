@@ -29,6 +29,7 @@ int main()
         printf("\n");
 
     }
+    printf("diagonal elements are:\n");
      for(i=0; i<3; i++)
     {
 
@@ -36,6 +37,8 @@ int main()
         {
             if(i==j)
             {
+
+                printf("%d ",A[i][j]);
                 sum=sum+A[i][j];
             }
 
