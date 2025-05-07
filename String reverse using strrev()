@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+
+{
+   char str[]="Siam Afroz Tanmoy";
+   printf("str= %s\n",str);
+
+
+   strrev(str);
+
+   printf("reverse str= %s",str);
+
+    getch();
+}
