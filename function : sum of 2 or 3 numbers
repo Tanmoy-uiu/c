@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+
+{
+    int num1,num2,num3;
+    printf("Enter 3 numbers:\n");
+    scanf("%d %d %d",&num1,&num2,&num3);
+
+    printf("the sum is: %d\n",sum(num1,num2,num3));
+
+}
+int sum(int num1,int num2,int num3)
+{
+    return num1+num2+num3;
+}
+
+or---------------------------------------
+#include<stdio.h>
+int main()
+
+{
+   sum(10,20,30);
+   sub(10,5);
+}
+void sum(int a,int b,int c)
+{
+    printf("sum is:%d\n",a+b+c);
+}
+void sub(int a,int b)
+{
+    printf("sub is:%d\n",a-b);
+}
+
