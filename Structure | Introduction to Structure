@@ -1,5 +1,5 @@
 #include<stdio.h>
-struct person
+struct person       //global structure
 {
     int age;
     float salary;
