@@ -1,0 +1,31 @@
+#include<stdio.h>
+struct person
+{
+    int age;
+    float salary;
+};
+
+int main()
+{
+    struct person person1= {25,25520.5};
+    struct person person2,person3;
+
+    person2.age=27;
+    person2.salary=3600.5;
+
+    person3=person2;
+
+    printf("Person 1:\n");
+    printf("age=%d\n",person1.age);
+    printf("salary=%f\n",person1.salary);
+
+
+
+    printf("Person 2:\n");
+    printf("age=%d\n",person2.age);
+    printf("salary=%f\n",person2.salary);
+
+    printf("Person 3:\n");
+    printf("age=%d\n",person3.age);
+    printf("salary=%f\n",person3.salary);
+}
