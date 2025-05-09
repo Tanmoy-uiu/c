@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    double base,result=1;
+    int exp,i;
+    printf("Enter base:\n");
+    scanf("%lf",&base);
+    printf("Enter exp:\n");
+    scanf("%d",&exp);
+
+    for(i=1;i<=exp;i++)
+    {
+        result=result*base;
+    }
+    printf("power is : %.2lf\n",result);
+}
