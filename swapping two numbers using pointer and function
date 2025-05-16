@@ -1,0 +1,21 @@
+#include<stdio.h>
+void swap(int *ptr1, int *ptr2)
+
+{
+    int temp;
+    temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+}
+int main()
+
+{
+    int x=10, y=20;
+
+    printf("Before swapping: x=%d, y=%d\n", x, y);
+
+    swap(&x, &y);
+    printf("After swapping: x=%d, y=%d\n", x, y);// void deyar por o prob holo na cz pointer memory address niye kaj kore.
+    //so when we swapped the value of &x(memory address of x ) and &y it changed the value of those memory  addresses so no matter from where you change it and where you  print it from, the value for the specific memory will be same.
+
+}
