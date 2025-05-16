@@ -1,0 +1,25 @@
+Pointer: Pointer is a variable that store/points the address of another variable
+diclare of pointers:
+data_type *var_name;
+ex:  int *p;
+     char *p;
+
+&-->address
+*---> oi address er value
+---------------------------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+    int x=5;
+    int *pointr;
+
+    pointr=&x;
+    printf("value of x is: %d\n",x);
+    printf("address of x is: %u\n",&x);  // u ,,sothat the value should come (+)ve
+    printf("value of pointer is: %d\n",pointr);  // memory address tar hexa-decimal value
+    printf("value of x is: %d\n",*pointr);
+    printf("address of pointer is: %d\n",&pointr);
+
+
+    getch();
+}
