@@ -1,0 +1,16 @@
+#include<stdio.h>
+void modifyvalue(int *num)
+{
+    *num=20;
+}
+int main()
+
+{
+    int num=10;
+    printf("Before modifiacation: %d\n",num);
+
+    modifyvalue(&num);
+    printf("After modifiacation: %d\n",num);
+
+}
+
