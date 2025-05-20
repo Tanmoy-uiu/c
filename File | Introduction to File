@@ -1,0 +1,55 @@
+Declaration of file:-----------
+FILE *name_of_file;
+
+· To write something in a file
+
+fputc()
+fputw()
+fputs()
+fprintf()
+fwrite()
+
+. To read something in a file
+
+fgetc()
+fgetw()
+fgets()
+fscanf()
+fread()
+
+File Opening Modes
+Mode                                     |                                   Description
+r ---------------------------------------|-------------------Opens an existing text file for reading purpose.                
+W----------------------------------------|---------Opens a text file for writing. If it does not exist, then a new file is created. Here your program will start
+                                         |               writing content from the beginning of the file.
+a----------------------------------------|-----------Opens a text file for writing in appending mode. If it does not exist, then a new file is created. Here
+                                         |               your program will start appending content in the existing file content.
+r+  -------------------------------------|----------Opens a text file for both reading and writing. If the file exists, loads it into memory and set up a
+                                                     pointer to the first character in it. If file doesn't exist it returns null.  
+
+w+     ----------------------------------|-------Opens a text file for both reading and writing. If file is present, it first destroys the file to zero length if
+                                                    it exists, otherwise creates a file if it does not exist.
+a+  -------------------------------------|--------Opens a text file for both reading and writing. It creates the file if it does not exist. The reading will
+                                               start from the beginning but writing can only be appended.
+
+
+#include<stdio.h>
+int main()
+{
+    FILE *file;
+    file= fopen("test.txt","w");
+    if(file==NULL)
+    {
+        printf("file doesn't exist\n");
+    }
+    else
+    {
+        printf("file is opened\n");
+        fclose(file);
+    }
+
+    getch();
+}
+
+
+
