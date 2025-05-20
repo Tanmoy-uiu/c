@@ -1,0 +1,33 @@
+(w) use korle: new file create hoy, write kora jay, then notun kisu likhle seta kintu agertar upor overwrite hoy.
+
+(a) use korle: age ja silo tar sathe add kora jay...append korbe
+
+first create an file in desktop. Then open new file in ide. Then save it as the file name which we created in desktop.
+
+
+#include<stdio.h>
+int main()
+{
+    FILE *file;
+    char name[20]="Anisul Islam";
+    int length = strlen(name);
+    int i;
+    file = fopen("test.txt","a");
+
+
+    if(file==NULL)
+    {
+        printf("file doesn't exist\n");
+
+    }
+    else
+    {
+        printf("file is opened\n");
+        for(int i=0;i<length;i++)
+        {
+            fputc(name[i],file);
+        }
+        printf("File is written successfully\n");
+        fclose(file);
+    }
+}
