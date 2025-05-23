@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main()
+{
+    FILE *file;
+    char name1[50],name2[50];
+
+    file =fopen("test.txt","a");
+    if(file==NULL)
+    {
+        printf("file doesn't exist\n");
+    }
+    else
+    {
+        printf("file is opened\n");
+
+        printf("Enter your name: ");
+        gets(name1);
+        printf("Enter your university name: ");
+        gets(name2);
+
+
+        fputs(name1,file);
+        fputs("-->",file);
+        fputs(name2,file);
+        fputs("\n",file);
+
+        printf("file is written successfully\n");
+
+    }
+}
+
